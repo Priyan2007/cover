@@ -1,0 +1,104 @@
+/* Reset and base styles */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif; /* Using Google Font */
+    color: white;
+  }
+  
+  /* Three columns */
+  .column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    text-align: left;
+  }
+  
+  /* Left Column */
+  .column-left {
+    background-color: #1e1e2f;
+  }
+  
+  /* Right Column */
+  .column-right {
+    background-color: #2f1e1e;
+  }
+  
+  /* Center (Book Cover) Column */
+  .column-center {
+    background-image: url(king.png); /* Make sure this file exists */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /* Ensures image fully covers the section */
+    flex-direction: column;
+    background-color: #000; /* fallback */
+    text-align: center;
+    min-height: 100%; /* Ensures the column takes the full height of the viewport */
+    position: relative;
+  }
+  
+  /* Content box in side columns */
+  .content {
+    max-width: 400px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, #911a80, #d42b45);
+    background-clip: text;
+    color: transparent;
+    font-weight: 600;
+  }
+  
+  h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #fdd835;
+  }
+  
+  h3 {
+    font-size: 18px;
+    font-weight: normal;
+    color: #ffcc80;
+    margin-top: 5px;
+    font-style: italic;
+  }
+  
+  /* Book Info: Position at the top of the column */
+  .book-info {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px 30px;
+    border-radius: 10px;
+    position: absolute;
+    top: 20px; /* Moves it towards the top */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    width: 90%; /* Add some margin */
+  }
+  
+  /* Make side columns text more readable */
+  .column-left, .column-right {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+  }
+  
+  /* Additional Styling for sections */
+  h2, h3 {
+    font-weight: 500;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  
